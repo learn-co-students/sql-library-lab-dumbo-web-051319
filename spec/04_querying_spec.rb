@@ -23,6 +23,7 @@ describe 'querying' do
   end
 
   it 'selects the series title with the most characters that are the species "human"' do
+    # binding.pry
     expect(@db.execute(select_series_title_with_most_human_characters)).to eq([["A Song of Ice and Fire"]])
   end
 
